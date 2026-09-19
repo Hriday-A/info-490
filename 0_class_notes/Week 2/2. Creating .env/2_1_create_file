@@ -1,0 +1,12 @@
+Step 1: In the base illinois.edu directory, create .env file
+
+# ------------------------------------------------------------------------
+Step 2: Install a package called django-environ in the terminal
+# command: pip install django-environ
+
+
+# This package will help in creating an environment reader object
+# This object knows how to load key=value pairs from .env
+# and expose them as OS environment variables.
+
+# ------------------------------------------------------------------------

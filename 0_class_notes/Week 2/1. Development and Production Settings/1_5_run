@@ -1,0 +1,30 @@
+# Instructions on running:
+
+1. First try running the server using our regular command:
+    python manage.py runserver
+
+    > Que:
+        What happened?
+        Did it run?
+        Why did this happen?
+
+
+2. Now try running this command:
+
+    python manage.py --settings=="illinois.settings.development"
+
+    > Que:
+        What happened?
+        Did it run now?
+        What is this command telling us?
+
+
+
+3. Analogical Interpretation:
+    > This code:
+        python manage.py --settings=="illinois.settings.development"
+
+    > is equivalent to pointing the settings to a new location:
+        illinois.settings.development
+        =
+        illinois/settings/development.py

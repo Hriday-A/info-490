@@ -1,0 +1,5 @@
+# Instructions on running:
+
+1. Now try running the development server:
+
+    python manage.py --settings=="illinois.settings.development"

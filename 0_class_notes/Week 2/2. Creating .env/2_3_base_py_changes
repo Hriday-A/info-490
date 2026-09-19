@@ -1,0 +1,28 @@
+# Changes in: illinois/settings/base.py
+
+Step 1: Cut the secret key and paste it in .env file
+
+SECRET_KEY=django-insecure-d+inmje_tm1*_=j+!pzdexr@8hssb3@_s*d!z(3r6qenohnglg
+
+
+# There should be no space between the variables in the .env.
+# There should be no inverted commas '' in the variable value as well.
+# But, different variables can be separated by a new line.
+
+# ------------------------------------------------------------------------
+Step 2: import env() from secrets_environment.py
+
+# Now read SECRET_KEY from .env inside base via env() function.
+# If you want to change the server, you can change it here.
+---------------------------------------------------
+
+# NEW IMPORT
+# This will import the env parser/reader that we created in illinois/secrets_environment.py
+from illinois.secrets_environment import env
+
+# NEW CHANGES
+# We are now reading the secret key from .env
+
+SECRET_KEY = env('SECRET_KEY')
+
+# ------------------------------------------------------------------------
